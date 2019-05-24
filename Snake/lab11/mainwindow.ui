@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1043</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(173, 127, 168);
+background: url(:/home/debian/Desktop/lab10/uDiedM8)
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>1011</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(108, 76, 238);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="scoreLbl">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>250</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+color: rgb(204, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Score:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="levelLbl">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>330</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+color: rgb(204, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Level:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="newGameBtn">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>100</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+ 
+background-color: rgb(204, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>New Game</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pauseBtn">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>150</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+background-color: rgb(204, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upBtn">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>180</y>
+       <width>83</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+background-color: rgb(204, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="leftBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>83</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+background-color: rgb(204, 255, 0);
+
+</string>
+     </property>
+     <property name="text">
+      <string>Left</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="downBtn">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>260</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(204, 255, 0);font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rightBtn">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>220</y>
+       <width>91</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(204, 255, 0);font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Right</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pictureLbl">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>511</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: url(:/home/debian/Desktop/lab10/uDiedM8)
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="gbaLbl">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>370</y>
+       <width>481</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="timeDisplay">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>390</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(239, 41, 41);
+background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="smallDecimalPoint">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>410</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 11pt &quot;Linux Biolinum Keyboard O&quot;;
+color: rgb(204, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Timer</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="levelDisplay">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>310</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(239, 41, 41);
+background-color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="scoreDisplay">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>230</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(239, 41, 41);
+background-color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1043</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSnake">
+    <property name="title">
+     <string>Snake</string>
+    </property>
+   </widget>
+   <addaction name="menuSnake"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>upBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>moveUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>727</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>773</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>moveRight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>793</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>downBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>moveDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>752</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>788</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leftBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>moveLeft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>635</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGameBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startNewGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>723</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pauseBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pause()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>741</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>moveUp()</slot>
+  <slot>moveRight()</slot>
+  <slot>moveDown()</slot>
+  <slot>moveLeft()</slot>
+  <slot>startNewGame()</slot>
+  <slot>pause()</slot>
+ </slots>
+</ui>
